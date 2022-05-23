@@ -21,6 +21,10 @@ body {
   color: var(--black);
 }
 
+button {
+  font: inherit;
+}
+
 a {
   color: inherit;
   text-decoration: underline;
