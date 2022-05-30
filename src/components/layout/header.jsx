@@ -3,6 +3,10 @@ import MHLogo from "../logo/mh";
 import BlogLogo from "../logo/codenerdy";
 import { Link } from "gatsby";
 import { MdSearch } from "react-icons/md";
+import * as styles from "../../styles/layout.module.css";
+
+const { mainHeader, container, siteNavigation, mhLogo, navItem, linkAsButton } =
+  styles;
 
 const Header = ({ blogLayout }) => {
   return blogLayout ? <BlogHeader /> : <MainHeader />;
@@ -10,9 +14,9 @@ const Header = ({ blogLayout }) => {
 
 const MainHeader = () => {
   return (
-    <header>
-      <Container maxWidth={"1200px"}>
-        <MHLogo />
+    <header className={mainHeader}>
+      <Container maxWidth={"1200px"} className={container}>
+        <MHLogo className={mhLogo} />
         <SiteNavigation />
       </Container>
     </header>
@@ -33,10 +37,12 @@ const BlogHeader = () => {
 const SiteNavigation = () => {
   return (
     <nav>
-      <ul>
+      <ul className={siteNavigation}>
         <NavItem href="/#featured">work</NavItem>
         <NavItem href="/codenerdy">blog</NavItem>
-        <NavItem href="/#contact">contact</NavItem>
+        <NavItem href="/#contact" className={linkAsButton}>
+          contact
+        </NavItem>
       </ul>
     </nav>
   );
@@ -44,7 +50,7 @@ const SiteNavigation = () => {
 
 const NavItem = ({ className, children, href }) => {
   return (
-    <li className={className}>
+    <li className={navItem + " " + className}>
       <Link to={href}>{children}</Link>
     </li>
   );

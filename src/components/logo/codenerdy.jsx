@@ -1,6 +1,6 @@
-const Logo = () => {
+const Logo = ({ className }) => {
   return (
-    <div>
+    <div className={className}>
       <svg
         width="166"
         height="30"
