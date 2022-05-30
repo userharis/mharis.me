@@ -61,3 +61,71 @@
     font-size: 17px;
   }
 }
+
+
+/* 
+===================== WORK ==========================
+*/
+
+.project {
+  margin-bottom: 100px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectTag {
+  font-size: 14px;
+  color: #ED5CC4;
+}
+
+.projectTitle {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.projectDesc {
+  margin: 10px 0;
+  max-width: 600px;
+
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--dark-gray);
+}
+
+.projectLink {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--blue);
+  text-transform: uppercase;
+}
+
+.projectImage {
+  min-width: 200px;
+  min-height: 200px;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--blue-light);
+}
+
+@media (max-width: 900px) {
+  .projectDesc {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .project {
+    margin-bottom: 40px;
+  }
+
+  .projectImage {
+    display: none;
+  }
+}
