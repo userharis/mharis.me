@@ -21,6 +21,11 @@ html,
 body {
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
+  color: var(--dark);
+}
+
+body {
+  background: var(--light);
 }
 
 ol,
