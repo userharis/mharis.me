@@ -1,11 +1,5 @@
-import Layout from "../components/layout/layout";
-
 const BlogPage = () => {
-  return (
-    <Layout blogLayout={true}>
-      <h1>BlogPage</h1>
-    </Layout>
-  );
+  return <h1>nerdy</h1>;
 };
 
 export default BlogPage;
