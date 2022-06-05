@@ -29,3 +29,16 @@
 .email {
   font-weight: 500;
 }
+
+/* 
+=================== Main ====================
+*/
+
+.main {
+  padding-top: 80px;
+
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("/images/pipes.webp");
+  background-size: 400px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}

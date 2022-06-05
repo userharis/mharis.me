@@ -1,8 +1,9 @@
 import Container from "./container";
+import * as styles from "../../styles/home/home.module.css";
 
 const Main = ({ children }) => {
   return (
-    <main>
+    <main className={styles.main}>
       <Container>{children}</Container>
     </main>
   );
