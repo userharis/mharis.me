@@ -1,6 +1,6 @@
 import Container from "./container";
 import Logo from "./logo";
-import * as styles from "../../styles/home/home.module.css";
+import * as styles from "../../../styles/home/home.module.css";
 
 const { header, email } = styles;
 

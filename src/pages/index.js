@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import Layout from "../components/home/layout";
+import Layout from "../components/home/layout/layout";
 
 const IndexPage = () => {
   return (

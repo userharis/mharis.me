@@ -1,5 +1,5 @@
 import Container from "./container";
-import * as styles from "../../styles/home/home.module.css";
+import * as styles from "../../../styles/home/home.module.css";
 
 const Main = ({ children }) => {
   return (

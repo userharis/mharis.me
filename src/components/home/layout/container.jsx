@@ -1,4 +1,4 @@
-import * as styles from "../../styles/home/home.module.css";
+import * as styles from "../../../styles/home/home.module.css";
 
 const Container = ({ children, maxWidth = "1040px", className }) => {
   return (
