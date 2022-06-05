@@ -6,3 +6,26 @@
   width: 95%;
   margin: 0 auto;
 }
+
+/* 
+=================== Header ====================
+*/
+
+.header {
+  background: var(--white);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+.header>div {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email {
+  font-weight: 500;
+}
