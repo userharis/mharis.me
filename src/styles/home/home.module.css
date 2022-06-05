@@ -58,3 +58,53 @@
   background-repeat: repeat;
   background-attachment: fixed;
 }
+
+/* 
+===================== Hero ==================
+*/
+
+.hero {
+  padding: 120px 0px;
+}
+
+.heroTitle {
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.heroPara {
+  margin: 5px 0 15px 0;
+  max-width: 760px;
+
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.hero .btnContainer :first-child {
+  margin-right: 20px;
+}
+
+.hero .btnContainer>a {
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+
+  .hero {
+    padding: 90px 0;
+  }
+
+  .heroTitle {
+    font-size: 48px;
+  }
+
+  .heroPara {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .hero .btnContainer :first-child {
+    margin-bottom: 20px;
+  }
+}
