@@ -1,5 +1,6 @@
-const { useStaticQuery, graphql, Link } = require("gatsby");
-const { default: SectionLabel } = require("../sectionLabel");
+import { useStaticQuery, graphql, Link } from "gatsby";
+import SectionLabel from "../sectionLabel";
+import * as styles from "../../../styles/home/home.module.css";
 
 const Blog = () => {
   const data = useStaticQuery(graphql`
@@ -22,7 +23,7 @@ const Blog = () => {
   `);
 
   return (
-    <section>
+    <section className={styles.blog}>
       <SectionLabel>Latest Articles</SectionLabel>
       {data.allMarkdownRemark.nodes.map((node, i) => {
         let { title, summary, updatedAt } = node.frontmatter;

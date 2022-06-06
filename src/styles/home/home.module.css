@@ -177,3 +177,46 @@
   font-size: 18px;
   font-weight: 500;
 }
+
+
+/* 
+===================== Blog ====================
+*/
+
+.blog {
+  margin-top: 70px;
+}
+
+.blog article {
+  margin-top: 50px;
+  max-width: 760px;
+}
+
+.blog article>div span {
+  font-size: 14px;
+  color: var(--gray-dark);
+}
+
+.blog article>div span:first-child {
+  margin-right: 15px;
+}
+
+.blog h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.blog p {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.blog a {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.blog article>* {
+  margin-top: 7px;
+}
