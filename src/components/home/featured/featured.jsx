@@ -1,5 +1,8 @@
 import SectionLabel from "../sectionLabel";
 import projects from "./data";
+import * as styles from "../../../styles/home/home.module.css";
+
+const { project } = styles;
 
 const Featured = () => {
   return (
@@ -7,7 +10,7 @@ const Featured = () => {
       <SectionLabel>Featured Projects</SectionLabel>
       {projects.map((p, i) => {
         return (
-          <article>
+          <article className={project}>
             <header>
               <h3>{p.title}</h3>
               {p.status === "under construction" && (
