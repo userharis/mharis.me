@@ -6,7 +6,7 @@ const { project } = styles;
 
 const Featured = () => {
   return (
-    <section>
+    <section id="featured">
       <SectionLabel>Featured Projects</SectionLabel>
       {projects.map((p, i) => {
         return (
