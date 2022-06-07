@@ -18,6 +18,7 @@
 
 html {
   font-family: "Lexend", sans-serif;
+  scroll-behavior: smooth;
 }
 
 button,
