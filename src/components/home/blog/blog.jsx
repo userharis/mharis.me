@@ -29,7 +29,7 @@ const Blog = () => {
         let { title, summary, updatedAt } = node.frontmatter;
         updatedAt = formatDate(updatedAt);
         return (
-          <article>
+          <article key={i}>
             <div>
               <span>{updatedAt}</span>
               <span>{node.timeToRead} mins Read</span>

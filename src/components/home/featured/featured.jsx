@@ -10,7 +10,7 @@ const Featured = () => {
       <SectionLabel>Featured Projects</SectionLabel>
       {projects.map((p, i) => {
         return (
-          <article className={project}>
+          <article key={i} className={project}>
             <header>
               <h3>{p.title}</h3>
               {p.status === "under construction" && (
