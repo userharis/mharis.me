@@ -16,7 +16,7 @@ const projects = [
     title: "QalamJs",
     description:
       "QalamJs is a block-styled rich text editor built for Urdu Language. It’s the editor we use at Naasher.",
-    url: "https://naasher.club/QalamJs",
+    url: "https://naasher.club/qalamjs",
     status: "under construction",
   },
 ];
