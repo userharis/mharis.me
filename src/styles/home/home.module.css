@@ -1,0 +1,371 @@
+/* 
+================== Container ================
+*/
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+
+/* 
+=================== Button =================
+*/
+
+.button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+
+  font-weight: 500;
+  font-size: 18px;
+  background-color: var(--gray-lighter);
+
+  cursor: pointer;
+  color: var(--blue);
+}
+
+
+/* 
+=================== Header ====================
+*/
+
+.header {
+  background: var(--white);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+.header>div {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email {
+  font-weight: 500;
+}
+
+/* 
+=================== Main ====================
+*/
+
+.main {
+  padding-top: 80px;
+
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("/images/pipes.webp");
+  background-size: 400px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/* 
+================ Section Label ===============
+*/
+
+.sectionLabel {
+  display: flex;
+  align-items: center;
+
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--gray-dark);
+}
+
+.sectionLabel::before {
+  content: "";
+
+  margin-right: 10px;
+  width: 100px;
+  height: 1px;
+  border-radius: .5px;
+  background-color: var(--gray-dark);
+}
+
+
+/* 
+===================== Hero ==================
+*/
+
+.hero {
+  padding: 120px 0px;
+}
+
+.heroTitle {
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.heroPara {
+  margin: 5px 0 15px 0;
+  max-width: 760px;
+
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.hero .btnContainer :first-child {
+  margin-right: 20px;
+}
+
+.hero .btnContainer>a {
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+
+  .hero {
+    padding: 90px 0;
+  }
+
+  .heroTitle {
+    font-size: 48px;
+  }
+
+  .heroPara {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .hero .btnContainer :first-child {
+    margin-bottom: 20px;
+  }
+}
+
+
+/* 
+================= Featured =================
+*/
+
+.project {
+  margin-top: 50px;
+}
+
+.project header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.project h3 {
+  margin-right: 15px;
+
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.project span {
+  padding: 5px 10px;
+  border: 1px solid var(--pink);
+  border-radius: 25px;
+
+  font-size: 14px;
+  color: var(--pink);
+}
+
+.project p {
+  margin: 10px 0;
+  max-width: 760px;
+
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.project a {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+/* 
+===================== Blog ====================
+*/
+
+.blog {
+  margin-top: 70px;
+}
+
+.blog article {
+  margin-top: 50px;
+  max-width: 760px;
+}
+
+.blog article>div span {
+  font-size: 14px;
+  color: var(--gray-dark);
+}
+
+.blog article>div span:first-child {
+  margin-right: 15px;
+}
+
+.blog h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.blog p {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.blog a {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.blog article>* {
+  margin-top: 7px;
+}
+
+/* 
+================== Contact ==================
+*/
+
+.contact {
+  margin-top: 70px;
+  padding-bottom: 70px;
+}
+
+.contact form {
+  margin-top: 50px;
+  width: clamp(600px, 100%, 825px);
+}
+
+.contactFlex {
+  width: 100%;
+  display: flex;
+}
+
+
+.inputWrapper:first-child {
+  flex: 1;
+}
+
+.inputWrapper:last-child {
+  flex: 2;
+  margin-left: 30px;
+}
+
+.fieldGroup {
+  padding-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.fieldGroup label {
+  width: 100%;
+  margin-bottom: 4px;
+  font-size: 16px;
+  color: var(--gray-dark);
+}
+
+.fieldGroup input,
+.fieldGroup textarea {
+  width: 100%;
+  padding: 7px 5px;
+  border: 1px solid var(--gray-light);
+  border-radius: 5px;
+
+  font-size: 16px;
+}
+
+.fieldGroup textarea {
+  height: 100%;
+}
+
+/* the FieldGroup containing textarea */
+.textareaContainer {
+  height: 100%;
+}
+
+.submitContainer {
+  margin-top: 20px;
+  width: 100%;
+  text-align: end;
+}
+
+@media (max-width: 650px) {
+  .contact form {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .contactFlex {
+    flex-direction: column;
+  }
+
+  .inputWrapper:last-child {
+    margin: 0;
+  }
+
+  .textareaContainer {
+    height: 150px;
+  }
+}
+
+/* 
+====================== Footer ======================
+*/
+
+.footer {
+  background: var(--black);
+}
+
+.footer p,
+.footer a {
+  color: var(--white);
+}
+
+.footerFlex {
+  min-height: 70px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerNav a {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+.footer .footerFlex:last-child {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .footer .footerFlex:first-child {
+    display: none;
+  }
+
+  .footer .footerFlex:last-child {
+    display: flex;
+  }
+
+  .footerFlex {
+    padding-top: 10px;
+    align-items: flex-start;
+  }
+
+  .footerNav {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 10px 0;
+  }
+
+  .footerNav a {
+    padding: 5px 0;
+    /* margin: 5px 0; */
+  }
+}
