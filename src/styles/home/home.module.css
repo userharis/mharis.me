@@ -230,6 +230,7 @@
 
 .contact {
   margin-top: 70px;
+  padding-bottom: 70px;
 }
 
 .contact form {
@@ -309,5 +310,62 @@
 
   .textareaContainer {
     height: 150px;
+  }
+}
+
+/* 
+====================== Footer ======================
+*/
+
+.footer {
+  background: var(--black);
+}
+
+.footer p,
+.footer a {
+  color: var(--white);
+}
+
+.footerFlex {
+  min-height: 70px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerNav a {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+.footer .footerFlex:last-child {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .footer .footerFlex:first-child {
+    display: none;
+  }
+
+  .footer .footerFlex:last-child {
+    display: flex;
+  }
+
+  .footerFlex {
+    padding-top: 10px;
+    align-items: flex-start;
+  }
+
+  .footerNav {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 10px 0;
+  }
+
+  .footerNav a {
+    padding: 5px 0;
+    /* margin: 5px 0; */
   }
 }
