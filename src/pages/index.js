@@ -6,14 +6,7 @@ import Blog from "../components/home/blog/blog";
 import Contact from "../components/home/contact/contact";
 
 const IndexPage = () => {
-  return (
-    <Layout>
-      <Hero />
-      <Featured />
-      <Blog />
-      <Contact />
-    </Layout>
-  );
+  return <h1>home</h1>;
 };
 
 export default IndexPage;
