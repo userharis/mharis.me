@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
 
 html,
 button,
@@ -19,7 +23,8 @@ pre {
 }
 
 body {
-  background: var(--white)
+  background: var(--white);
+  height: 5000px;
 }
 
 ul {
