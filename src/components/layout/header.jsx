@@ -73,6 +73,7 @@ const Navigation = ({ menuToggle, setMenuToggle }) => {
 
   return (
     <nav className={`${nav} ${menuToggle && open}`}>
+      {/* eslint-disable-next-line */}
       <ul onClick={handleClick}>
         <NavLink to="/#work">Work</NavLink>
         <NavLink to="/blog">Blog</NavLink>

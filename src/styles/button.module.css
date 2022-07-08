@@ -1,5 +1,5 @@
 .button {
-  padding: 9px 20px;
+  padding: 11px 20px;
   border: 2px solid var(--blue);
   border-radius: 5px;
 
@@ -9,10 +9,27 @@
   color: var(--blue);
   background: none;
 
+  transition: .2s;
   cursor: pointer;
 }
+
 
 .filled {
   background: var(--blue);
   color: var(--white);
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    background: var(--blue-pale);
+  }
+
+
+  .filled:hover {
+    border-color: var(--blue-dark);
+    background: var(--blue-dark);
+    color: var(--white);
+  }
+
 }

@@ -2,6 +2,7 @@
 title: "the Greatest Article ever Published"
 summary: "loremIpsum is dummy text designed and developed by charles babbage in 1500 BC."
 updatedAt: 2015-01-24
+thumb: "../images/naasher.png"
 ---
 
 Gatsby helps professional developers efficiently create maintainable, highly-performant, content-rich websites.

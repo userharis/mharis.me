@@ -1,0 +1,21 @@
+.hero {
+  padding-top: 150px;
+}
+
+.title {
+  font-size: clamp(50px, 8vw, 80px);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.title span {
+  opacity: .6;
+}
+
+.text {
+  margin-bottom: 30px;
+  max-width: 550px;
+  color: var(--gray);
+  font-size: 16px;
+  line-height: 1.7;
+}

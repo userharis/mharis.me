@@ -9,6 +9,7 @@
   background: var(--white);
 
   transition-duration: .3s;
+  z-index: 999;
 }
 
 .pinned,
@@ -54,8 +55,14 @@
   color: var(--gray);
 }
 
+@media(hover: hover) and (pointer: fine) {
+  .navLink:hover {
+    color: var(--blue);
+  }
+}
+
 .header .cta {
-  padding: 7px 20px;
+  padding: 8px 20px;
 }
 
 .burger {
@@ -107,7 +114,7 @@
   transform: rotate(45deg);
 }
 
-@media(max-width: 600px) {
+@media(max-width: 768px) {
   .burger {
     display: flex;
   }

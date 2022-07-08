@@ -39,6 +39,14 @@ module.exports = {
         path: "./src/posts",
       },
     },
+    "gatsby-transformer-json",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "data",
+        path: "./src/data",
+      },
+    },
   ],
   jsxRuntime: "automatic",
 };

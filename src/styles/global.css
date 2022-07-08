@@ -8,7 +8,9 @@
   box-sizing: border-box;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 html,
 button,
@@ -24,7 +26,6 @@ pre {
 
 body {
   background: var(--white);
-  height: 5000px;
 }
 
 ul {
@@ -34,4 +35,13 @@ ul {
 a {
   color: var(--blue);
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--blue-dark);
 }
