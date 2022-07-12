@@ -38,7 +38,7 @@ const Work = () => {
   const { nodes } = data.allProjectsJson;
 
   return (
-    <section className={work}>
+    <section className={work} id="work">
       <SectionLabel>Some Stuff I've Worked on</SectionLabel>
       {nodes.map((n, i) => {
         return <Project data={n} index={i} key={i} />;
