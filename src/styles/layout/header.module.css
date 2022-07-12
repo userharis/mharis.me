@@ -6,8 +6,9 @@
   right: 0;
   top: 0;
 
-  background: var(--white);
+  background: rgba(255, 255, 255, 0.5);
 
+  backdrop-filter: blur(3px);
   transition-duration: .3s;
   z-index: 999;
 }
@@ -23,7 +24,7 @@
 }
 
 .unpinned {
-  top: -100px;
+  top: -70px;
 }
 
 .container {
