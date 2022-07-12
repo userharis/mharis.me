@@ -57,8 +57,8 @@ const Project = ({ data, index }) => {
         <h3 className={projectTitle}>{title}</h3>
         <p className={para}>{description}</p>
         <div className={tagsContainer}>
-          {tags.map((t) => {
-            return <span>#{t}</span>;
+          {tags.map((t, i) => {
+            return <span key={i}>#{t}</span>;
           })}
         </div>
         <div className={linksContainer}>
