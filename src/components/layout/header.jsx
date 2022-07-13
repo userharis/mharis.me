@@ -1,9 +1,9 @@
 import { Link } from "gatsby";
 import Container from "./container";
 import Logo from "./logo";
-import * as styles from "../../styles/layout/header.module.css";
 import Button from "../button";
 import { useState, useEffect, useRef } from "react";
+import * as styles from "../../styles/layout/header.module.css";
 
 const {
   header,

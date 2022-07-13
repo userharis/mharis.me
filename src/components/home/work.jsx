@@ -1,8 +1,8 @@
 import SectionLabel from "./sectionLabel";
-import * as styles from "../../styles/home/work.module.css";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { graphql, useStaticQuery } from "gatsby";
+import * as styles from "../../styles/home/work.module.css";
 
 const {
   work,

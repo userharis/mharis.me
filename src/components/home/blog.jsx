@@ -1,8 +1,8 @@
 import SectionLabel from "./sectionLabel";
 import Button from "../button";
 import BlogPost from "../blogPost";
-import * as styles from "../../styles/home/blog.module.css";
 import { graphql, useStaticQuery } from "gatsby";
+import * as styles from "../../styles/home/blog.module.css";
 
 const { blog, postsContainer, blogPost, btnContainer } = styles;
 
