@@ -3,11 +3,12 @@ import Container from "./container";
 
 import * as styles from "../../styles/layout/footer.module.css";
 
-const { social, email, fixed } = styles;
+const { social, email, fixed, copy } = styles;
 
 const Footer = () => {
   return (
     <footer>
+      <p className={copy}>&copy; Muhammad Haris, 2022</p>
       <div className={fixed}>
         <Container>
           <div className={social}>
