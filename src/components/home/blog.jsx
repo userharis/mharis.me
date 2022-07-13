@@ -1,8 +1,8 @@
 import SectionLabel from "./sectionLabel";
 import Button from "../button";
+import BlogPost from "../blogPost";
 import * as styles from "../../styles/home/blog.module.css";
-import { graphql, Link, useStaticQuery } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { graphql, useStaticQuery } from "gatsby";
 
 const { blog, postsContainer, blogPost, btnContainer } = styles;
 
@@ -34,30 +34,15 @@ const Blog = () => {
       <SectionLabel>Articles I Wrote Recently</SectionLabel>
       <div className={postsContainer}>
         {data.allMarkdownRemark.nodes.map((node, i) => {
-          return <BlogPost key={i} data={node.frontmatter} />;
+          return (
+            <BlogPost key={i} data={node.frontmatter} className={blogPost} />
+          );
         })}
       </div>
       <div className={btnContainer}>
         <Button to="/blog">visit my blog</Button>
       </div>
     </section>
-  );
-};
-
-const BlogPost = ({ data }) => {
-  const { title, updatedAt, slug, thumb } = data;
-  const image = getImage(thumb);
-
-  return (
-    <article className={blogPost}>
-      <div>
-        <GatsbyImage image={image} alt="" />
-      </div>
-      <p>{updatedAt}</p>
-      <Link to={`/blog/${slug}`}>
-        <h3>{title}</h3>
-      </Link>
-    </article>
   );
 };
 
