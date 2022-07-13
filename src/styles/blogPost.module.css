@@ -18,11 +18,14 @@
   color: var(--blue-dark);
 }
 
-.blogPost>a:hover {
-  text-decoration: underline;
+@media (hover: hover) and (pointer: fine) {
+  .blogPost>a:hover {
+    text-decoration: underline;
+  }
+
 }
 
 .blogPost h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
 }
