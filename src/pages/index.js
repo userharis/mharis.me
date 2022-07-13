@@ -6,6 +6,7 @@ import Hero from "../components/home/hero";
 import * as styles from "../styles/pages/index.module.css";
 import Work from "../components/home/work";
 import Blog from "../components/home/blog";
+import Contact from "../components/home/contact";
 
 const IndexPage = () => {
   return (
@@ -15,6 +16,7 @@ const IndexPage = () => {
           <Hero />
           <Work />
           <Blog />
+          <Contact />
         </Container>
       </main>
     </Layout>
