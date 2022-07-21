@@ -14,7 +14,11 @@ const Posts = () => {
             title
             thumb {
               childImageSharp {
-                gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+                gatsbyImageData(
+                  placeholder: BLURRED
+                  layout: FULL_WIDTH
+                  aspectRatio: 1.5
+                )
               }
             }
             updatedAt(formatString: "MMMM DD, YYYY")

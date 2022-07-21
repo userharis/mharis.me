@@ -20,7 +20,11 @@ const Blog = () => {
             updatedAt(formatString: "MMMM DD, YYYY")
             thumb {
               childImageSharp {
-                gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+                gatsbyImageData(
+                  placeholder: BLURRED
+                  layout: FULL_WIDTH
+                  aspectRatio: 1.5
+                )
               }
             }
           }
