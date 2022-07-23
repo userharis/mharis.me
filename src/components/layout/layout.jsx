@@ -1,12 +1,12 @@
 import Header from "./header";
 import Footer from "./footer";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, socials }) => {
   return (
     <>
       <Header />
       {children}
-      <Footer />
+      <Footer socials={socials} />
     </>
   );
 };
