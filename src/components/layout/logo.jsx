@@ -1,6 +1,8 @@
+import { Link } from "gatsby";
+
 const Logo = ({ className }) => {
   return (
-    <div className={className}>
+    <Link to="/" className={className}>
       <svg
         width="1em"
         height="1em"
@@ -13,7 +15,7 @@ const Logo = ({ className }) => {
           fill="currentColor"
         />
       </svg>
-    </div>
+    </Link>
   );
 };
 
