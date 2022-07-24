@@ -4,7 +4,7 @@ summary: "I have just built this website, will soon post useful content"
 updatedAt: 2022-07-22
 thumb: "../images/stairs-night.jpg"
 tags: ["websites", "conversion"]
-slug: "dummy-article-one"
+slug: "dummy-article-two"
 ---
 
 **Hey, thanks for visiting. But this website is currently in beta. And this article contains nothing useful. Comeback a week or two later for amazing web development content.**
