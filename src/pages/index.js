@@ -7,19 +7,25 @@ import Work from "../components/home/work";
 import Blog from "../components/home/blog";
 import Contact from "../components/home/contact";
 import * as styles from "../styles/pages/global.module.css";
+import { Helmet } from "react-helmet";
 
 const IndexPage = () => {
   return (
-    <Layout>
-      <main>
-        <Container maxWidth="1040px" className={styles.container}>
-          <Hero />
-          <Work />
-          <Blog />
-          <Contact />
-        </Container>
-      </main>
-    </Layout>
+    <>
+      <Helmet>
+        <title>Muhammad Haris | Freelance Web Development Services</title>
+      </Helmet>
+      <Layout>
+        <main>
+          <Container maxWidth="1040px" className={styles.container}>
+            <Hero />
+            <Work />
+            <Blog />
+            <Contact />
+          </Container>
+        </main>
+      </Layout>
+    </>
   );
 };
 
