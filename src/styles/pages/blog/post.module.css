@@ -1,0 +1,56 @@
+.main {
+  margin-top: 150px;
+}
+
+.smallContainer span {
+  font-size: 16px;
+  margin-right: 40px;
+  color: var(--gray);
+}
+
+.h1 {
+  margin: 10px 0;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.tag {
+  font-style: italic;
+}
+
+.tag::before {
+  content: "#";
+}
+
+.cover {
+  margin: 30px 0;
+  border-radius: 5px;
+}
+
+.content>* {
+  margin: 20px 0;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--gray);
+}
+
+.content pre {
+  border-radius: 5px;
+}
+
+.content h2 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.content h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.content ul {
+  padding-left: 20px;
+}
