@@ -1,18 +1,31 @@
-import "../styles/globals.css";
-import Layout from "../components/home/layout/layout";
-import Hero from "../components/home/hero/hero";
-import Featured from "../components/home/featured/featured";
-import Blog from "../components/home/blog/blog";
-import Contact from "../components/home/contact/contact";
+import "../styles/variables.css";
+import "../styles/global.css";
+import Layout from "../components/layout/layout";
+import Container from "../components/layout/container";
+import Hero from "../components/home/hero";
+import Work from "../components/home/work";
+import Blog from "../components/home/blog";
+import Contact from "../components/home/contact";
+import * as styles from "../styles/pages/global.module.css";
+import { Helmet } from "react-helmet";
 
 const IndexPage = () => {
   return (
-    <Layout>
-      <Hero />
-      <Featured />
-      <Blog />
-      <Contact />
-    </Layout>
+    <>
+      <Helmet>
+        <title>Muhammad Haris | Freelance Web Development Services</title>
+      </Helmet>
+      <Layout>
+        <main>
+          <Container maxWidth="1040px" className={styles.container}>
+            <Hero />
+            <Work />
+            <Blog />
+            <Contact />
+          </Container>
+        </main>
+      </Layout>
+    </>
   );
 };
 

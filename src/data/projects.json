@@ -1,0 +1,17 @@
+[
+  {
+    "title": "MHaris.me",
+    "description": "The website you are currently on. It features recent works of mine and a blog where I write about web development and programming stuff.",
+    "tags": ["ReactJS", "GatsbyJS"],
+    "url": "https://mharis.me",
+    "repo": "https://github.com/userharis/mharis.me.git",
+    "image": "../images/mharis.png"
+  },
+  {
+    "title": "Naasher.Social",
+    "description": "Naasher is a social blogging platform built for Urdu Language. Users get a personalized feed, a nice rich-text editor and the ability to connect custom domains. It’s under heavy development and will soon be launched for public.",
+    "tags": ["Go", "JavaScript", "MicroServices"],
+    "url": "https://naasher.social",
+    "image": "../images/naasher.png"
+  }
+]

@@ -1,7 +1,11 @@
-import * as styles from "../../styles/home/home.module.css";
+import * as s from "../../styles/home/sectionLabel.module.css";
 
 const SectionLabel = ({ children }) => {
-  return <h2 className={styles.sectionLabel}>{children}</h2>;
+  return (
+    <div className={s.label}>
+      <h2>{children}</h2>
+    </div>
+  );
 };
 
 export default SectionLabel;
