@@ -1,4 +1,4 @@
-import { FiGithub, FiFacebook, FiLinkedin, FiTwitter } from "react-icons/fi";
+import { FiGithub, FiFacebook, FiLinkedin } from "react-icons/fi";
 import Container from "./container";
 
 import * as styles from "../../styles/layout/footer.module.css";
@@ -14,15 +14,11 @@ const Footer = ({ socials = true }) => {
           <Container>
             <div className={social}>
               <SocialLink href="https://fb.me/fb.userharis">
-                <FiTwitter />
-              </SocialLink>
-              <SocialLink href="https://fb.me/fb.userharis">
                 <FiFacebook />
               </SocialLink>
-              <SocialLink href="https://linkedin.com/in/mharis01">
+              <SocialLink href="https://linkedin.com/in/userharis">
                 <FiLinkedin />
               </SocialLink>
-
               <SocialLink href="https://github.com/userharis">
                 <FiGithub />
               </SocialLink>
